@@ -1,0 +1,19 @@
+name: Hunger Games
+main: hungerGames.main
+version: 0.1.2
+description: >
+             Hunger games game play.
+depend: [Vault]             
+commands:
+  start:
+    description: Starts the hunger games.
+  reset:
+    description: Stops and resets the hunger games.
+  join:
+    description: Joins a teams for the hunger games.
+  team:
+    description: Shows the team you are currently in for the hunger games.
+  unready:
+    description: Unreadys you from your team.
+  hglist:
+    description: Shows the current list of players.
