@@ -6,7 +6,7 @@ Authors:
  - Valandur
 
 Versions:
- - Core: 0.1.2
+ - Core: 0.2.3
 
 Bukkit:
- - craftbukkit 1.3.1 R1.1 (#2330)
+ - craftbukkit 1.4.7 R1.1 (#2632)
