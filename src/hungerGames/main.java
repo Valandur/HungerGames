@@ -7,10 +7,11 @@ import net.milkbowl.vault.permission.Permission;
 
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
+import org.bukkit.Material;
 import org.bukkit.Server;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-import org.bukkit.craftbukkit.v1_4_R1.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_7_R3.entity.CraftPlayer;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -131,7 +132,7 @@ public class main extends JavaPlugin implements Listener
 						{
 							pl.getInventory().clear();
 							pl.setGameMode(GameMode.SURVIVAL);
-							pl.setHealth(20);
+							pl.setHealth(20d);
 							pl.setSaturation(20);
 						}
 					}
@@ -408,7 +409,7 @@ public class main extends JavaPlugin implements Listener
 			{
 				if (players.containsKey(p.getName()))
 				{
-					if (e.getBlock().getTypeId() != 18 && e.getBlock().getTypeId() != 106 && e.getBlock().getTypeId() != 39 && e.getBlock().getTypeId() != 40)
+					if (e.getBlock().getType() != Material.LEAVES && e.getBlock().getType() != Material.LEAVES_2 && e.getBlock().getType() != Material.GRASS) 
 						e.setCancelled(true);
 				}
 				else
