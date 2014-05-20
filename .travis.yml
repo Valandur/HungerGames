@@ -2,5 +2,5 @@ language: java
 before_install:
     sudo apt-get install leiningen
 install:
-    -lein pom
-    -mvn install
+    - "lein pom"
+    - "mvn install"
